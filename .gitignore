@@ -1,3 +1,15 @@
 *backup
 *config
 *.xml
+*.idea
+*.exe
+*.dll
+*.so
+*.dylib
+*.cache
+/src/vendor
+.idea
+bin
+/src/log
+docker.log
+/src/app/conf
