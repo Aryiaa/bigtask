@@ -13,3 +13,5 @@ bin
 /src/log
 docker.log
 /src/app/conf
+
+*笔记

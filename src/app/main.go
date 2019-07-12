@@ -1,4 +1,4 @@
-package src
+package main
 
 import (
 	"app/conf"
@@ -34,7 +34,7 @@ func initSetting()  {
 }
 
 func InitVIews(c *gin.Engine)  {
-	c.LoadHTMLGlob("/view/**/*")
+	c.LoadHTMLGlob("view/**/*")
 	c.Static("/public","./public")
 
 }
