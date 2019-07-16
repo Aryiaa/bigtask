@@ -1,10 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{{define "login/index.html"}}
+<!doctype html>
+<html lang="en" class="fullscreen-bg">
 
+<head>
+    <title>登录 </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- VENDOR CSS -->
+    {{/*<link rel="stylesheet" href="/public/assets/css/bootstrap.min.css">*/}}
+    <link rel="stylesheet" href="/public/assets/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/public/assets/vendor/linearicons/style.css">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/public/assets/css/main.css">
+    <!-- FOR DEMO PURPOSES ONLY. You should remove this in your project -->
+    <link rel="stylesheet" href="/public/assets/css/demo.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="76x76" href="/public/assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/public/assets/img/favicon.png">
+    {{/*<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>*/}}
+</head>
+
+
+<body>
+<form class="form-auth-small" action="/login/do_login/" method="post">
+    <div id="wrapper">
+        <div class="vertical-align-wrap">
+            <div class="vertical-align-middle">
+                <div class="auth-box lockscreen clearfix">
+                    <div class="content">
+                        <h1 class="sr-only">Klorofil - Free Bootstrap dashboard</h1>
+                        <div class="logo text-center"><img src="/public/assets/img/gitlab.png" alt="Klorofil Logo">
+                            <p class="lead">Python 大数据任务交付平台</p>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block" id="login">Gitlab授权登录</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
 </body>
-</html>
+
+{{end}}
